@@ -1,3 +1,10 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .link {
     color: red;
 }
@@ -12,16 +19,19 @@
     background-color: grey;
     height: 40px;
 }
-ul li {
-    display: inline-block;
+ul {
     padding: 10px;
 }
-li a {
-    border-right: 1px solid white;
+ul li {
+    display: inline-block;
 }
-/*ul li:last-child {
+li {
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+ul li:last-child {
     border-right: none;
-}*/
+}
 .float {
     float: left;
 }
